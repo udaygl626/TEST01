@@ -1,4 +1,2 @@
 flask
-psutil
-docker
-requests
+
