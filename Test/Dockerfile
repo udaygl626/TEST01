@@ -1,2 +1,12 @@
-FROM alpine:latest
-CMD ["echo", "hello from test container"]
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+EXPOSE 8010
+
+CMD ["python", "app.py"]
