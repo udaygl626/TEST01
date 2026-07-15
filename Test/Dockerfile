@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 8010
 
-CMD ["python", "test.py"]
+CMD ["python", "app.py"]
